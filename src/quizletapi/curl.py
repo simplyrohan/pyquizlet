@@ -17,7 +17,7 @@ def curl_api(endpoint: str) -> str:
         str: The raw response from the API.
     """
 
-    cmd = f"""curl {endpoint} \
+    cmd = f"""curl "{endpoint}" \
     -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
     -H 'accept-language: en-US,en;q=0.9' \
     -H 'cache-control: max-age=0' \
